@@ -38,3 +38,6 @@ ENV/
 
 # Jupyter
 .ipynb_checkpoints
+
+# Sensitive/runtime data
+exercise_data.json
