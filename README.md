@@ -1,6 +1,6 @@
 # Daily Exercise Manager
 
-A lightweight Windows desktop app for planning workouts, checking off completion, and tracking day-by-day progress.
+A lightweight Windows desktop app for planning workouts, checking off completion, and tracking day-by-day progress.(Made with help of ai)
 
 ## Features
 
