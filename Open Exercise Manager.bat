@@ -1,8 +1,16 @@
 @echo off
 setlocal
 set "APP_DIR=%~dp0"
-set "PYW=%APP_DIR%myenv\Scripts\pythonw.exe"
+set "VENV_DIR=%APP_DIR%.venv"
+set "PYW=%VENV_DIR%\Scripts\pythonw.exe"
+set "PY=%VENV_DIR%\Scripts\python.exe"
 set "APP=%APP_DIR%exercise_manager.py"
+
+if not exist "%PYW%" (
+    if exist "%PY%" (
+        set "PYW=%PY%"
+    )
+)
 
 if not exist "%PYW%" (
     echo Could not find virtual environment launcher:
